@@ -1,36 +1,27 @@
-# vue-remote-js
+# v-remote-js
 [![Build Status](https://travis-ci.org/qinmao/vue-remote-js.svg?branch=master)](https://travis-ci.org/qinmao/vue-remote-js)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+引入远程脚本，脚本加载完成后执行回调
+## Install
+```shell
+npm install v-remote-js  -S
 ```
+## Quick Start
+``` javascript
+import Vue from 'vue'
+import vRometeJs from 'v-remote-js'
+Vue.use(vRometeJs)
+// 在 .vue 文件中 写法如下
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+ <remote-js src="http://xxx.js" @scriptLoad="callbackFn"></remote-js>
+ 
+ export default {
+    methods:{
+        callbackFn(){
+        // ...写你的逻辑
+        }  
+    }
+ }
+   
+``` 
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/qinmao/vue-remote-js/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
