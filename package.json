@@ -1,0 +1,23 @@
+{
+  "name": "vue-remote",
+  "version": "1.0.0",
+  "description": "引入远程js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinmao/vue-remote-js.git"
+  },
+  "keywords": [
+    "vue",
+    "远程js"
+  ],
+  "author": "xintairuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qinmao/vue-remote-js/issues"
+  },
+  "homepage": "https://github.com/qinmao/vue-remote-js#readme"
+}
