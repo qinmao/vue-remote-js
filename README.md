@@ -8,11 +8,11 @@ npm install v-remote-js  -S
 ```
 ## Quick Start
 ``` javascript
+在main.js 注册插件 使其成为一个全局组件
 import Vue from 'vue'
 import vRometeJs from 'v-remote-js'
 Vue.use(vRometeJs)
-// 在 .vue 文件中 写法如下
-
+// 之后在每个xx.vue 文件中 写法如下
  <remote-js src="http://xxx.js" @scriptLoad="callbackFn"></remote-js>
  
  export default {
